@@ -1,88 +1,42 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="section item-1">
+    <div class="row word">
+      <div class="userPic">
+        <div
+          class="sec1_userPic"
+          style="transition-timing-function: cubic-bezier(0.6, 0.37, 0.23, 0.94); top: 0px; border-radius: 100px;"
+        ></div>
+      </div>
+      <span class="hidden-xs resume-hide">張又升</span>
+      <span class="col-xs-12 hidden-sm hidden-md hidden-lg resume-hide"
+        >張又升</span
+      >
+      <p class="motto resume-hide hinge-sty" style="position: relative">
+        Yosheng
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/yosheng0323"
+          ><i class="fa fa-facebook fa-fw"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/yosheng-zhang-020962102"
+          ><i class="fa fa-linkedin fa-fw"></i
+        ></a>
+        <a href="https://github.com/yosheng"
+          ><i class="fa fa-github fa-fw"></i
+        ></a>
+        <a href="https://legacy.gitbook.com/@yosheng"
+          ><i class="fa fa-book fa-fw"></i
+        ></a>
+        <a href="https://www.slideshare.net/ssuserf01a96"
+          ><i class="fa fa-slideshare fa-fw"></i
+        ></a>
+      </div>
+      <a href="#" class="next-page ">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'Home',
@@ -96,7 +50,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
