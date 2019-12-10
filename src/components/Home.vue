@@ -16,19 +16,19 @@
       </p>
       <div class="social-links">
         <a href="https://www.facebook.com/yosheng0323"
-          ><i class="fa fa-facebook fa-fw"></i
+          ><i class="lni-facebook size-md"></i
         ></a>
         <a href="https://www.linkedin.com/in/yosheng-zhang-020962102"
-          ><i class="fa fa-linkedin fa-fw"></i
+          ><i class="lni-linkedin size-md"></i
         ></a>
         <a href="https://github.com/yosheng"
-          ><i class="fa fa-github fa-fw"></i
+          ><i class="lni-github size-md"></i
         ></a>
         <a href="https://legacy.gitbook.com/@yosheng"
-          ><i class="fa fa-book fa-fw"></i
+          ><i class="lni-book size-md"></i
         ></a>
         <a href="https://www.slideshare.net/ssuserf01a96"
-          ><i class="fa fa-slideshare fa-fw"></i
+          ><i class="lni-slideshare size-md"></i
         ></a>
       </div>
       <a href="#" class="next-page ">
