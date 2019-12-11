@@ -1,5 +1,5 @@
 <template>
-  <div class="section item-5">
+  <div>
     <!--第一屏-->
     <div class="slide hidden-xs">
       <div class="container" id="container-img">

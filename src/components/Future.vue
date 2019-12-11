@@ -1,5 +1,5 @@
 <template>
-  <div class="section item-6">
+  <div>
     <h1>展望未來</h1>
     <div class="word">
       <p>
@@ -11,8 +11,6 @@
         凡事只求盡心盡力 結果只求問心無愧
       </p>
     </div>
-    <div class="top"></div>
-    <div class="foot"></div>
   </div>
 </template>
 <script>

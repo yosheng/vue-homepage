@@ -3,34 +3,22 @@
     <Navigation></Navigation>
     <full-page :options="options">
       <div class="section">
-        <div class="box1">
-          <router-view />
-        </div>
+        <Home></Home>
       </div>
       <div class="section">
-        <div class="box2">
-          section2
-        </div>
+        <Profile></Profile>
       </div>
       <div class="section">
-        <div class="box3">
-          section3
-        </div>
+        <Achievement></Achievement>
       </div>
       <div class="section">
-        <div class="box4">
-          section4
-        </div>
+        <Experience></Experience>
       </div>
       <div class="section">
-        <div class="box5">
-          section5
-        </div>
+        <Achievement></Achievement>
       </div>
       <div class="section">
-        <div class="box6">
-          section6
-        </div>
+        <Future></Future>
       </div>
     </full-page>
   </div>
@@ -38,10 +26,22 @@
 
 <script>
 import Navigation from './components/Navigation'
+import Profile from './components/Profile'
+import Interest from './components/Interest'
+import Home from './components/Home'
+import Future from './components/Future'
+import Experience from './components/Experience'
+import Achievement from './components/Achievement'
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    Navigation: Navigation
+    Navigation,
+    Profile,
+    Interest,
+    Home,
+    Future,
+    Experience,
+    Achievement
   },
   data () {
     return {
@@ -51,22 +51,15 @@ export default {
           'transparent',
           'transparent',
           '#e4e4e4',
-          'rgba(255, 255, 255, .0)',
+          '#41b883',
           'transparent',
           'transparent'
         ],
         scrollingSpeed: 700,
         navigation: true, // 導航條顯示
-        anchors: [
-          '',
-          'profile',
-          'achievement',
-          'experience',
-          'interest',
-          'future'
-        ],
+        anchors: ['home', 'profile', 'achievement', 'experience', 'interest', 'future'],
         afterLoad: this.afterLoad,
-        scrollOverflow: false, // 內容超出後是否出現滾動條
+        scrollOverflow: true, // 內容超出後是否出現滾動條
         loopHorizontal: false, // 左右滑塊循環
         scrollBar: false,
         menu: '#menu',
@@ -78,11 +71,11 @@ export default {
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
+} */
 </style>
