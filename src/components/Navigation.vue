@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="info" class="resume">
       <b-navbar-brand data-menuanchor="home" href="#home">Yosheng Zhang</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -33,4 +33,68 @@ export default {
   methods: {}
 }
 </script>
-<style></style>
+<style scoped lang="scss">
+/**********************導航條**********************************/
+
+.resume {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  border: none;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0);
+  transition: 1s all ease;
+}
+
+.navbar.blue {
+  background: rgba(71, 166, 173, 1);
+}
+
+.navbar.black {
+  background: rgba(51, 51, 51, 0.7);
+}
+
+.resume .navbar-brand,
+.resume .navbar-brand:visited,
+.resume .navbar-brand:hover {
+  color: #a7e615;
+  font-size: 18px;
+}
+
+.resume .navbar-right li a,
+.resume .navbar-right li a:visited {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.resume .navbar-right li a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:visited,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #0f698a;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #122b40;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: #122b40;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #122b40;
+}
+
+/********************導航條End***************************************/
+</style>

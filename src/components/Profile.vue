@@ -48,3 +48,64 @@
 <script>
 export default {}
 </script>
+<style lang="scss">
+.row {
+  margin-top: 30px;
+}
+
+.container {
+  display: none;
+}
+
+.container .icon-infomation {
+  height: 211px;
+  position: relative;
+}
+
+.container .icon-infomation img {
+  height: 160px;
+}
+
+.icon-infomation p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.icon-infomation:nth-child(1) {
+  -webkit-animation: bounceIn 2s;
+  animation: bounceIn 2s;
+}
+
+.icon-infomation:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: lightSpeedIn 2s ease forwards;
+  animation: lightSpeedIn 2s ease forwards;
+  -webkit-animation-delay: 1s;
+}
+
+.icon-infomation:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: rubberBand 2s ease forwards;
+  animation: rubberBand 2s ease forwards;
+  -webkit-animation-delay: 1.5s;
+}
+
+.icon-infomation:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: bounceInUp 2s ease forwards;
+  animation: bounceInUp 2s ease forwards;
+  -webkit-animation-delay: 2s;
+}
+
+.page2-title {
+  display: inline-block;
+  -webkit-animation: zoomInDown 2s ease forwards;
+  animation: zoomInDown 2s ease forwards;
+}
+
+.icon-infomation.zoomOutUp {
+  opacity: 1;
+  -webkit-animation: slideOutUp 0.5s linear;
+  animation: slideOutUp 0.5s linear;
+}
+</style>

@@ -55,3 +55,61 @@
 <script>
 export default {}
 </script>
+<style lang="scss">
+.fp-tableCell {
+  vertical-align: top;
+  padding-top: 100px;
+}
+.title {
+  -webkit-animation: flipInY 2s linear;
+  animation: flipInY 2s linear;
+}
+
+.container {
+  display: none;
+}
+
+.sign {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-animation: flip 1s linear;
+  animation: flip 1s linear;
+  color: transparent;
+  text-shadow: 0 0 6px #f96, -1px -1px #fff, 1px -1px #444;
+}
+.experience {
+  height: 100px;
+}
+.team-img {
+  width: 120px;
+  height: 120px;
+}
+.thumbnail {
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+
+.thumbnail .caption {
+  color: rgb(255, 140, 0);
+  text-shadow: 1px 1px 1px #4442a9;
+
+  font-family: inherit;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.thumbnail .team-img {
+  border: 4px solid transparent;
+  -webkit-animation: team-img 3s linear infinite;
+  animation: team-img 3s linear infinite;
+}
+.thumbnail {
+  margin: 0;
+}
+</style>
