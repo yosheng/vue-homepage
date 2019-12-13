@@ -162,6 +162,16 @@ a {
   background-size: cover;
 }
 
+.item-6 {
+  background: url("~@/assets/images/pure.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  // width: 100%;
+  // height: 100%;
+  // position: fixed;
+  // display: none;
+}
+
 /**********************设置背景End*****************************************/
 
 /********************右側導航欄*************************************/

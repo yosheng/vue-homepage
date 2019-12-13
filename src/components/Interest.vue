@@ -1,11 +1,10 @@
 <template>
   <div>
     <!--第一屏-->
-    <div class="slide hidden-xs">
-      <div class="container" id="container-img">
-        <div class="row">
-          <div class="portfolio-items">
-            <div class="col-sm-6 col-md-3 col-lg-3 web">
+    <div class="slide">
+      <b-container fluid>
+        <b-row>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -27,8 +26,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -53,8 +52,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -78,8 +77,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -101,8 +100,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -123,8 +122,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -145,8 +144,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -167,8 +166,8 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
+            </b-col>
+            <b-col cols="6" md="3" lg="3">
               <div class="portfolio-item">
                 <div class="hover-bg">
                   <div class="hover-text">
@@ -189,15 +188,14 @@
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </b-col>
+        </b-row>
+      </b-container>
     </div>
     <!--第二屏-->
     <div class="slide">
-      <div class="container" id="container-img">
-        <div class="row">
+      <b-container fluid>
+        <b-row>
           <ul class="bxslider">
             <li>
               <img
@@ -209,8 +207,8 @@
               <img src="images/page-5/02-grub4dos.jpg" title="整合維護工具碟" />
             </li>
           </ul>
-        </div>
-      </div>
+        </b-row>
+      </b-container>
     </div>
   </div>
 </template>

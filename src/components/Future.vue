@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top"></div>
+    <div class="top" style="height: 30%;"></div>
     <h1>展望未來</h1>
     <div class="word">
       <p>
@@ -12,7 +12,7 @@
         凡事只求盡心盡力 結果只求問心無愧
       </p>
     </div>
-    <div class="foot"></div>
+    <div class="foot" style="height: 30%;"></div>
   </div>
 </template>
 <script>
