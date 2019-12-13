@@ -74,21 +74,13 @@ export default {
       },
       methods: {
         // 頁面渲染後回調
-        afterRender () {
-
-        },
+        afterRender () {},
         // 滾動觸發後結束前回調
-        onLeave (index, nextIndex, direction) {
-
-        },
+        onLeave (index, nextIndex, direction) {},
         // 滾動結束後回調
-        afterLoad (anchorLink, index) {
-
-        },
+        afterLoad (anchorLink, index) {},
         // 水平滑塊回調
-        onSlideLeave (anchorLink, index, slideIndex, direction) {
-
-        }
+        onSlideLeave (anchorLink, index, slideIndex, direction) {}
       }
     }
   }
@@ -116,13 +108,28 @@ a {
   float: right;
 }
 
-.section.item-1,
-.section.item-2,
-.section.item-4,
-.section.item-6 {
+.item {
   text-align: center;
   font: 50px "Microsoft Yahei";
   color: #fff;
+}
+
+.item-1 {
+  @extend .item;
+}
+
+.item-2 {
+  @extend .item;
+}
+.item-4 {
+  @extend .item;
+  .fp-tableCell {
+    vertical-align: top;
+    padding-top: 100px;
+  }
+}
+.item-6 {
+  @extend .item;
 }
 
 /********基本END***************/

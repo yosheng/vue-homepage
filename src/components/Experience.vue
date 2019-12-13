@@ -56,10 +56,6 @@
 export default {}
 </script>
 <style lang="scss">
-.fp-tableCell {
-  vertical-align: top;
-  padding-top: 100px;
-}
 .title {
   -webkit-animation: flipInY 2s linear;
   animation: flipInY 2s linear;
