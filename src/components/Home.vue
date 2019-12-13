@@ -1,38 +1,40 @@
 <template>
-  <div class="row word">
-    <div class="userPic">
-      <div
-        class="sec1_userPic"
-        style="transition-timing-function: cubic-bezier(0.6, 0.37, 0.23, 0.94); top: 0px; border-radius: 100px;"
-      ></div>
-    </div>
-    <span class="hidden-xs resume-hide">張又升</span>
-    <span class="col-xs-12 hidden-sm hidden-md hidden-lg resume-hide"
-      >張又升</span
-    >
-    <p class="motto resume-hide hinge-sty" style="position: relative">
-      Yosheng
-    </p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/yosheng0323"
-        ><i class="lni-facebook size-md"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/yosheng-zhang-020962102"
-        ><i class="lni-linkedin size-md"></i
-      ></a>
-      <a href="https://github.com/yosheng"
-        ><i class="lni-github size-md"></i
-      ></a>
-      <a href="https://legacy.gitbook.com/@yosheng"
-        ><i class="lni-book size-md"></i
-      ></a>
-      <a href="https://www.slideshare.net/ssuserf01a96"
-        ><i class="lni-slideshare size-md"></i
-      ></a>
-    </div>
-    <a href="#" class="next-page ">
-      <span class="glyphicon glyphicon-chevron-down"></span>
-    </a>
+  <div>
+    <b-row class="word">
+      <b-row class="userPic">
+        <div
+          class="sec1_userPic"
+          style="transition-timing-function: cubic-bezier(0.6, 0.37, 0.23, 0.94); top: 0px; border-radius: 100px;"
+        ></div>
+      </b-row>
+      <b-col cols="12" class="d-none d-sm-block resume-name-big">張又升</b-col>
+      <b-col cols="12" class="d-sm-none resume-name"
+        >張又升</b-col
+      >
+      <b-col cols="12" class="motto resume-hide hinge-sty" style="position: relative">
+        Yosheng
+      </b-col>
+      <b-col cols="12" class="social-links">
+        <a href="https://www.facebook.com/yosheng0323"
+          ><i class="lni-facebook size-md"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/yosheng-zhang-020962102"
+          ><i class="lni-linkedin size-md"></i
+        ></a>
+        <a href="https://github.com/yosheng"
+          ><i class="lni-github size-md"></i
+        ></a>
+        <a href="https://legacy.gitbook.com/@yosheng"
+          ><i class="lni-book size-md"></i
+        ></a>
+        <a href="https://www.slideshare.net/ssuserf01a96"
+          ><i class="lni-slideshare size-md"></i
+        ></a>
+      </b-col>
+      <a href="#" class="next-page ">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </b-row>
   </div>
 </template>
 <script>
@@ -48,21 +50,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-// page-1
-.word {
-  margin-top: -10%;
-}
-.word > span:first-child {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 700;
-  color: #0a9676;
-  text-shadow: 5px -2px 8px #151414;
-}
-.word > span.hidden-xs,
-.word > span.col-xs-12 {
+.resume-name {
   color: #b6bf31;
   text-shadow: 9px -2px 15px #000;
+}
+
+.resume-name-big {
+  @extend .resume-name;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 5px -2px 8px #151414;
 }
 
 .motto {
@@ -178,7 +175,7 @@ export default {
   height: 170px;
 }
 
-.row .sec1_userPic {
+.sec1_userPic {
   position: relative;
   width: 170px;
   height: 170px;

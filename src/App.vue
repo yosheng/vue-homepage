@@ -116,10 +116,6 @@ a {
   float: right;
 }
 
-.resume-hide {
-  display: none;
-}
-
 .section.item-1,
 .section.item-2,
 .section.item-4,

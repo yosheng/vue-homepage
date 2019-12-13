@@ -49,13 +49,14 @@
 export default {}
 </script>
 <style lang="scss">
-.row {
-  margin-top: 30px;
-}
+// 影响到Home
+// .row {
+//   margin-top: 30px;
+// }
 
-.container {
-  display: none;
-}
+// .container {
+//   display: none;
+// }
 
 .container .icon-infomation {
   height: 211px;
