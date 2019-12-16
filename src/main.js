@@ -10,10 +10,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Fullpage
 import 'fullpage.js/vendors/scrolloverflow'
+import 'fullpage.js/dist/fullpage.css'
 import VueFullPage from 'vue-fullpage.js'
 
 // External Library
 import './assets/css/lineIcons-1.1/LineIcons.min.css'
+import './assets/css/main.scss'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
