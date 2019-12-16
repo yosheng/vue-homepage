@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navigation></Navigation>
-    <full-page :options="options">
+    <full-page ref="fullpage" :options="options">
       <div class="section item-1">
         <Home></Home>
       </div>
@@ -21,6 +21,21 @@
         <Future></Future>
       </div>
     </full-page>
+    <div
+      id="fp-nav"
+      class="d-none d-sm-block"
+      v-bind:style="{ marginTop: navStyleTopValue + 'px', right: '17px' }"
+    >
+      <ul>
+        <li
+          v-for="(item, index) in fullpageNavList"
+          :key="index"
+          v-b-tooltip.hover.left="item.title"
+        >
+          <a v-bind:href="item.href" v-bind:class="{ active: index == 0 }"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -56,7 +71,7 @@ export default {
           'transparent'
         ],
         scrollingSpeed: 700,
-        navigation: true, // 導航條顯示
+        navigation: false, // 導航條顯示
         anchors: [
           'home',
           'profile',
@@ -66,22 +81,81 @@ export default {
           'future'
         ],
         afterLoad: this.afterLoad,
+        afterRender: this.afterRender,
+        onLeave: this.onLeave,
+        onSlideLeave: this.onSlideLeave,
         scrollOverflow: true, // 內容超出後是否出現滾動條
         loopHorizontal: false, // 左右滑塊循環
         scrollBar: false,
         menu: '#menu',
         easing: 'easeInOut'
       },
-      methods: {
-        // 頁面渲染後回調
-        afterRender () {},
-        // 滾動觸發後結束前回調
-        onLeave (index, nextIndex, direction) {},
-        // 滾動結束後回調
-        afterLoad (anchorLink, index) {},
-        // 水平滑塊回調
-        onSlideLeave (anchorLink, index, slideIndex, direction) {}
-      }
+      fullpageNavList: [
+        { href: '#home', title: '個人簡歷' },
+        { href: '#profile', title: '基本資料' },
+        { href: '#achievement', title: '個人成就' },
+        { href: '#experience', title: '工作經歷' },
+        { href: '#interest', title: '實務經驗' },
+        { href: '#future', title: '展望未來' }
+      ]
+    }
+  },
+  methods: {
+    // 頁面渲染後回調
+    afterRender () {
+      // $('item-4').css('background', 'rgba(255, 255, 255, .1)')
+      // 側邊導航事件
+      // var tooltips = [
+      //   '個人簡歷',
+      //   '基本資料',
+      //   '個人成就',
+      //   '工作經歷',
+      //   '實務經驗',
+      //   '展望未來'
+      // ]
+      // console.log(document.getElementById('fp-nav').children[0].children)
+      // console.log(document.getElementById('fp-nav').childNodes)
+      // var liList = document.getElementById('fp-nav').children[0].childNodes
+      // liList.forEach((item, index) => {
+      //   item.setAttribute('data-toggle', 'tooltip')
+      //   item.setAttribute('data-placement', 'left')
+      //   item.setAttribute('title', tooltips[index])
+      // })
+      // $('#fp-nav ul li').each(function (index) {
+      //   this.dataset['toggle'] = 'tooltip'
+      //   this.dataset['placement'] = 'left'
+      //   $(this).attr('title', Tooltips[index])
+      // })
+      // $('[data-toggle="tooltip"]').tooltip()
+      // // 頂部導航欄自動會拉事件
+      // if ($('.navbar-toggle').css('display') == 'block') {
+      //   $('.navbar-collapse li').on('click', function () {
+      //     $('.navbar-toggle').trigger('click')
+      //   })
+      // }
+      // $('#fp-nav').addClass('hidden-xs')
+      // // 為了避免標籤太多同一時間加載的話在剛載入頁面時候產生怪異感，所有動畫元素初始都是hidden的
+      // $('.item-1 .next-page').on('click', function () {
+      //   $.fn.fullpage.moveSectionDown()
+      // })
+      // setTimeout(function () {
+      //   $('.item-1 .corner').show()
+      //   $('.resume-hide').show()
+      // }, 500)
+    },
+    // 滾動觸發後結束前回調
+    onLeave (index, nextIndex, direction) {},
+    // 滾動結束後回調
+    afterLoad (anchorLink, index) {},
+    // 水平滑塊回調
+    onSlideLeave (anchorLink, index, slideIndex, direction) {}
+  },
+  mounted () {
+    console.log(this.$refs.fullpage)
+  },
+  computed: {
+    navStyleTopValue () {
+      return -68
     }
   }
 }
@@ -89,25 +163,6 @@ export default {
 
 <style scoped lang="scss">
 /********基本***************/
-
-body {
-  font-family: microsoft yahei, sans-serif;
-  tap-heilight-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-}
-
-a {
-  color: #ffffff;
-}
-
-.f-left {
-  float: left;
-}
-
-.f-right {
-  float: right;
-}
-
 .item {
   text-align: center;
   font: 50px "Microsoft Yahei";
@@ -173,34 +228,4 @@ a {
 }
 
 /**********************设置背景End*****************************************/
-
-/********************右側導航欄*************************************/
-
-#fp-nav {
-  top: 80%;
-}
-
-#fp-nav ul li {
-  vertical-align: middle;
-  margin: 10px 50px 0;
-}
-
-#fp-nav li .active {
-  background-position: 0 bottom;
-}
-
-#fp-nav ul li a {
-  display: block;
-  color: #8f9da4;
-  width: 21px;
-  height: 21px;
-  background: url(~@/assets/images/dot.png) 5px 5px no-repeat;
-  /*right: 0;*/
-}
-
-#fp-nav span {
-  display: none;
-}
-
-/****************************右側導航欄End******************************/
 </style>
