@@ -1,0 +1,48 @@
+body {
+  font-family: microsoft yahei, sans-serif;
+  tap-heilight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: #ffffff;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+
+/********************右側導航欄*************************************/
+
+#fp-nav {
+  top: 80%;
+}
+
+#fp-nav ul li {
+  vertical-align: middle;
+  margin: 10px 50px 0;
+}
+
+#fp-nav li .active {
+  background-position: 0 bottom;
+}
+
+#fp-nav ul li a {
+  display: block;
+  color: #8f9da4;
+  width: 21px;
+  height: 21px;
+  background: url(~@/assets/images/dot.png) 5px 5px no-repeat;
+  /*right: 0;*/
+}
+
+#fp-nav span {
+  display: none;
+}
+
+/****************************右側導航欄End******************************/
