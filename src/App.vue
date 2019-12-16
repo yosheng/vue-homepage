@@ -104,29 +104,7 @@ export default {
     // 頁面渲染後回調
     afterRender () {
       // $('item-4').css('background', 'rgba(255, 255, 255, .1)')
-      // 側邊導航事件
-      // var tooltips = [
-      //   '個人簡歷',
-      //   '基本資料',
-      //   '個人成就',
-      //   '工作經歷',
-      //   '實務經驗',
-      //   '展望未來'
-      // ]
-      // console.log(document.getElementById('fp-nav').children[0].children)
-      // console.log(document.getElementById('fp-nav').childNodes)
-      // var liList = document.getElementById('fp-nav').children[0].childNodes
-      // liList.forEach((item, index) => {
-      //   item.setAttribute('data-toggle', 'tooltip')
-      //   item.setAttribute('data-placement', 'left')
-      //   item.setAttribute('title', tooltips[index])
-      // })
-      // $('#fp-nav ul li').each(function (index) {
-      //   this.dataset['toggle'] = 'tooltip'
-      //   this.dataset['placement'] = 'left'
-      //   $(this).attr('title', Tooltips[index])
-      // })
-      // $('[data-toggle="tooltip"]').tooltip()
+
       // // 頂部導航欄自動會拉事件
       // if ($('.navbar-toggle').css('display') == 'block') {
       //   $('.navbar-collapse li').on('click', function () {
