@@ -32,7 +32,11 @@
           :key="index"
           v-b-tooltip.hover.left="item.title"
         >
-          <a v-bind:href="item.href" v-bind:class="{ active: index == 0 }"></a>
+          <a
+            v-bind:href="'#' + item.page"
+            v-bind:class="{ active: item.page === activePage }"
+            @click="activePage = item.href"
+          ></a>
         </li>
       </ul>
     </div>
@@ -90,13 +94,14 @@ export default {
         menu: '#menu',
         easing: 'easeInOut'
       },
+      activePage: 'home',
       fullpageNavList: [
-        { href: '#home', title: '個人簡歷' },
-        { href: '#profile', title: '基本資料' },
-        { href: '#achievement', title: '個人成就' },
-        { href: '#experience', title: '工作經歷' },
-        { href: '#interest', title: '實務經驗' },
-        { href: '#future', title: '展望未來' }
+        { page: 'home', title: '個人簡歷' },
+        { page: 'profile', title: '基本資料' },
+        { page: 'achievement', title: '個人成就' },
+        { page: 'experience', title: '工作經歷' },
+        { page: 'interest', title: '實務經驗' },
+        { page: 'future', title: '展望未來' }
       ]
     }
   },
@@ -104,7 +109,6 @@ export default {
     // 頁面渲染後回調
     afterRender () {
       // $('item-4').css('background', 'rgba(255, 255, 255, .1)')
-
       // // 頂部導航欄自動會拉事件
       // if ($('.navbar-toggle').css('display') == 'block') {
       //   $('.navbar-collapse li').on('click', function () {
@@ -122,9 +126,11 @@ export default {
       // }, 500)
     },
     // 滾動觸發後結束前回調
-    onLeave (index, nextIndex, direction) {},
+    onLeave (origin, destination, direction) {
+      this.activePage = destination.anchor
+    },
     // 滾動結束後回調
-    afterLoad (anchorLink, index) {},
+    afterLoad (origin, destination, direction) {},
     // 水平滑塊回調
     onSlideLeave (anchorLink, index, slideIndex, direction) {}
   },
