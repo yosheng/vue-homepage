@@ -16,6 +16,7 @@ import VueFullPage from 'vue-fullpage.js'
 // External Library
 import './assets/css/lineIcons-1.1/LineIcons.min.css'
 import './assets/css/main.scss'
+import './assets/css/movement.scss'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
