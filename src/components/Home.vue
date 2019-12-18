@@ -8,31 +8,33 @@
         ></div>
       </b-row>
       <b-col cols="12" class="d-none d-sm-block resume-name-big">張又升</b-col>
-      <b-col cols="12" class="d-sm-none resume-name"
-        >張又升</b-col
+      <b-col cols="12" class="d-sm-none resume-name">張又升</b-col>
+      <b-col
+        cols="12"
+        class="motto resume-hide hinge-sty"
+        style="position: relative"
       >
-      <b-col cols="12" class="motto resume-hide hinge-sty" style="position: relative">
         Yosheng
       </b-col>
       <b-col cols="12" class="social-links">
         <a href="https://www.facebook.com/yosheng0323"
-          ><i class="lni-facebook size-md"></i
-        ></a>
+          ><font-awesome-icon :icon="['fab', 'facebook']" fixed-width
+        /></a>
         <a href="https://www.linkedin.com/in/yosheng-zhang-020962102"
-          ><i class="lni-linkedin size-md"></i
-        ></a>
+          ><font-awesome-icon :icon="['fab', 'linkedin']" fixed-width
+        /></a>
         <a href="https://github.com/yosheng"
-          ><i class="lni-github size-md"></i
-        ></a>
+          ><font-awesome-icon :icon="['fab', 'github']" fixed-width
+        /></a>
         <a href="https://legacy.gitbook.com/@yosheng"
-          ><i class="lni-book size-md"></i
-        ></a>
+          ><font-awesome-icon :icon="['fas', 'book']" fixed-width
+        /></a>
         <a href="https://www.slideshare.net/ssuserf01a96"
-          ><i class="lni-slideshare size-md"></i
-        ></a>
+          ><font-awesome-icon :icon="['fab', 'slideshare']" fixed-width
+        /></a>
       </b-col>
       <a href="#" class="next-page ">
-        <span class="glyphicon glyphicon-chevron-down"></span>
+        <font-awesome-icon :icon="['fas', 'chevron-down']" />
       </a>
     </b-row>
   </div>

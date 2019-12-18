@@ -18,6 +18,16 @@ import './assets/css/lineIcons-1.1/LineIcons.min.css'
 import './assets/css/main.scss'
 import './assets/css/movement.scss'
 
+// Fontawesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faChevronDown, faBook } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faLinkedin, faGithub, faSlideshare } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faChevronDown, faBook)
+library.add(faFacebook, faLinkedin, faGithub, faSlideshare)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(VueFullPage)
