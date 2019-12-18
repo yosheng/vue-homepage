@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <b-container fluid>
       <div
         id="demo1"
         class="slideBox sm-img fly hidden-xs hidden-sm"
@@ -106,7 +106,7 @@
         <span class="subject-8">Java</span>
         <span class="subject-1">HTML5</span>
       </div>
-    </div>
+    </b-container >
   </div>
 </template>
 <script>
