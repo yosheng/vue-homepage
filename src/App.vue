@@ -3,22 +3,22 @@
     <Navigation></Navigation>
     <full-page ref="fullpage" :options="options">
       <div class="section item-1">
-        <Home></Home>
+        <Home v-show="activePage == 'home'"></Home>
       </div>
       <div class="section item-2">
-        <Profile></Profile>
+        <Profile v-show="activePage == 'profile'"></Profile>
       </div>
       <div class="section item-3">
-        <Achievement></Achievement>
+        <Achievement v-show="activePage == 'achievement'"></Achievement>
       </div>
       <div class="section item-4">
-        <Experience></Experience>
+        <Experience v-show="activePage == 'experience'"></Experience>
       </div>
       <div class="section item-5">
-        <Interest></Interest>
+        <Interest v-show="activePage == 'interest'"></Interest>
       </div>
       <div class="section item-6">
-        <Future></Future>
+        <Future v-show="activePage == 'future'"></Future>
       </div>
     </full-page>
     <div

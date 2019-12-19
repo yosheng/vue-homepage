@@ -33,9 +33,9 @@
           ><font-awesome-icon :icon="['fab', 'slideshare']" fixed-width
         /></a>
       </b-col>
-      <a href="#" class="next-page ">
-        <font-awesome-icon :icon="['fas', 'chevron-down']" />
-      </a>
+        <a href="#" class="next-page">
+          <font-awesome-icon :icon="['fas', 'chevron-down']" fixed-width />
+        </a>
     </b-row>
   </div>
 </template>
@@ -44,7 +44,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      show: true
     }
   }
 }
@@ -52,6 +52,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 .resume-name {
   color: #b6bf31;
   text-shadow: 9px -2px 15px #000;
@@ -84,78 +85,26 @@ export default {
 }
 
 .next-page {
+  font-size: 30px;
   line-height: 80px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.2);
   transition: 1s all ease;
   -webkit-transition: 1s all ease;
+  animation: fadeInUp 2s ease;
+  -webkit-animation: fadeInUp 2s ease;
 }
 .next-page:hover {
   background: rgba(51, 51, 51, 1);
 }
 
-.next-page span {
-  font-size: 30px;
+.fa-chevron-down {
   animation: nextPage 2s linear infinite;
   -webkit-animation: nextPage 2s linear infinite;
 }
-.next-page {
-  animation: fadeInUp 2s ease;
-  -webkit-animation: fadeInUp 2s ease;
-}
-.inner {
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: absolute;
-}
 
-.corner1,
-.corner2,
-.corner3,
-.corner4 {
-  max-width: 72px;
-  min-width: 50px;
-  width: 5%;
-  position: absolute;
-}
-[class^="corner"] img {
-  width: 100%;
-}
-
-.corner1 {
-  left: 10%;
-  top: 10%;
-  animation: corner1 1s ease;
-  -webkit-animation: corner1 1s ease;
-  transform-origin: 0;
-  -webkit-transform-origin: 0;
-}
-
-.corner2 {
-  left: 10%;
-  bottom: 10%;
-  animation: corner2 1s ease;
-  -webkit-animation: corner2 1s ease;
-  transform-origin: 0;
-  -webkit-transform-origin: 0;
-}
-.corner3 {
-  right: 10%;
-  top: 10%;
-  animation: corner3 1s ease;
-  -webkit-animation: corner3 1s ease;
-}
-
-.corner4 {
-  right: 10%;
-  bottom: 10%;
-  animation: corner4 1s ease;
-  -webkit-animation: corner4 1s ease;
-}
-
-.word > span:nth-child(1),
-.word > span:nth-child(2) {
+.word > .resume-name-big,
+.word > .resume-name {
   display: inline-block;
   -webkit-animation: fadeInDownBig 2s ease;
   animation: fadeInDownBig 2s ease;
@@ -168,6 +117,7 @@ export default {
 
 .social-links {
   margin-bottom: 25px;
+  font-size: 3rem;
 }
 
 /********************首頁***************************************/
