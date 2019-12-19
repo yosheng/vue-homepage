@@ -50,7 +50,7 @@
         <div class="media">
           <div class="media-left media-top">
             <a href="#" class="">
-              <img class="media-object" src="images/page-3/coding.png" alt="" />
+              <img class="media-object" src="~@/assets/images/page-3/coding.png" alt="" />
             </a>
           </div>
           <div class="media-body">
@@ -66,7 +66,7 @@
         <div class="media ">
           <div class="media-left media-top">
             <a href="#" class="">
-              <img class="media-object" src="images/page-3/repair.png" alt="" />
+              <img class="media-object" src="~@/assets/images/page-3/repair.png" alt="" />
             </a>
           </div>
           <div class="media-body">
@@ -82,7 +82,7 @@
         <div class="media ">
           <div class="media-left media-top">
             <a href="#" class="">
-              <img class="media-object" src="images/page-3/profle.png" alt="" />
+              <img class="media-object" src="~@/assets/images/page-3/profle.png" alt="" />
             </a>
           </div>
           <div class="media-body">
