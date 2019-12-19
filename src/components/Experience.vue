@@ -12,11 +12,11 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col cols="6" md="4">
+        <b-col cols="6" md="3">
           <div class="thumbnail">
             <img
-              src="images/page-4/01-shu.jpg"
-              class=" img-circle team-img"
+              src="~@/assets/images/page-4/01-shu.jpg"
+              class=" rounded-circle team-img"
               alt=""
             />
             <div class="caption">
@@ -26,11 +26,11 @@
             </div>
           </div>
         </b-col>
-        <b-col cols="6" md="4">
+        <b-col cols="6" md="3">
           <div class="thumbnail">
             <img
-              src="images/page-4/02-asus.jpg"
-              class="img-circle team-img"
+              src="~@/assets/images/page-4/02-asus.jpg"
+              class="rounded-circle team-img"
               alt=""
             />
             <div class="caption">
@@ -40,17 +40,31 @@
             </div>
           </div>
         </b-col>
-        <b-col cols="6" md="4">
+        <b-col cols="6" md="3">
           <div class="thumbnail">
             <img
-              src="images/page-4/03-sce.jpg"
-              class="img-circle team-img"
+              src="~@/assets/images/page-4/03-sce.jpg"
+              class="rounded-circle team-img"
               alt=""
             />
             <div class="caption">
               <h3>文化大學</h3>
               <p>程式設計師</p>
               <p>後端程式開發和系統規劃與建置</p>
+            </div>
+          </div>
+        </b-col>
+        <b-col cols="6" md="3">
+          <div class="thumbnail">
+            <img
+              src="~@/assets/images/page-4/04-sweetome.jpg"
+              class="rounded-circle team-img"
+              alt=""
+            />
+            <div class="caption">
+              <h3>斯维登</h3>
+              <p>软件开发工程师</p>
+              <p>全栈开发和系统维护</p>
             </div>
           </div>
         </b-col>

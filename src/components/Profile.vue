@@ -9,7 +9,7 @@
       <b-row>
         <b-col cols="6" sm="6" md="3" class="icon-infomation introduction">
           <a href="https://blog.yosheng.tw">
-            <img src="images/page-2/laptop.png" alt="" />
+            <img src="~@/assets/images/page-2/laptop.png" alt="" />
           </a>
           <h4>個人簡介</h4>
           <p>
@@ -18,7 +18,7 @@
         </b-col>
         <b-col cols="6" sm="6" md="3" class="icon-infomation education">
           <a href="https://who.shu.edu.tw/yosheng0323">
-            <img src="images/page-2/cap.png" alt="" />
+            <img src="~@/assets/images/page-2/cap.png" alt="" />
           </a>
           <h4>教育背景</h4>
           <p>
@@ -29,7 +29,7 @@
         </b-col>
         <b-col cols="6" sm="6" md="3" class="icon-infomation experience">
           <a href="https://blog.yosheng.tw/about-author">
-            <img src="images/page-2/scroll.png" alt="" />
+            <img src="~@/assets/images/page-2/scroll.png" alt="" />
           </a>
           <h4>校園經歷</h4>
           <p>
@@ -40,7 +40,7 @@
         </b-col>
         <b-col cols="6" sm="6" md="3" class="icon-infomation contact">
           <a href="mailto:sad445566@gmail.com">
-            <img src="images/page-2/mail.png" alt="" />
+            <img src="~@/assets/images/page-2/mail.png" alt="" />
           </a>
           <h4>聯繫方式</h4>
           <p>
