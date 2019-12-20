@@ -27,6 +27,11 @@ import { faFacebook, faLinkedin, faGithub, faSlideshare } from '@fortawesome/fre
 // animation
 import Animated from 'animate.css'
 
+// AwesomeSwiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper /* { default global options } */)
 library.add(faChevronDown, faBook)
 library.add(faFacebook, faLinkedin, faGithub, faSlideshare)
 Vue.component('font-awesome-icon', FontAwesomeIcon)

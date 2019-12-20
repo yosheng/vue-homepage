@@ -20,8 +20,8 @@
                     <i class="fa fa-search"></i>
                   </div>
                   <img
-                    src="images/page-5/01-blog.jpg"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/01-blog.jpg"
+                    class="img-fluid"
                     alt="個人部落格"
                   />
                 </div>
@@ -46,8 +46,8 @@
                     <i class="fa fa-search"></i>
                   </div>
                   <img
-                    src="images/page-5/02-portfolio.png"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/02-portfolio.png"
+                    class="img-fluid"
                     alt="個人回憶錄"
                   />
                 </div>
@@ -71,8 +71,8 @@
                     <i class="fa fa-search"></i>
                   </div>
                   <img
-                    src="images/page-5/03-Store Management.png"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/03-Store Management.png"
+                    class="img-fluid"
                     alt="商品管理系統"
                   />
                 </div>
@@ -94,8 +94,8 @@
                     <i class="fa fa-search"></i>
                   </div>
                   <img
-                    src="images/page-5/04-Google App Engine.jpg"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/04-Google App Engine.jpg"
+                    class="img-fluid"
                     alt="Google App Engine"
                   />
                 </div>
@@ -116,8 +116,8 @@
                     <small>使用 ASP.NET 學習簡單CRUD操作</small>
                   </div>
                   <img
-                    src="images/page-5/05-Member Management.png"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/05-Member Management.png"
+                    class="img-fluid"
                     alt="會員管理介面"
                   />
                 </div>
@@ -138,8 +138,8 @@
                     <small>使用C# 分析html tag並將其下載至資料庫</small>
                   </div>
                   <img
-                    src="images/page-5/06-Web spider.jpg"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/06-Web spider.jpg"
+                    class="img-fluid"
                     alt="網路爬蟲"
                   />
                 </div>
@@ -160,8 +160,8 @@
                     <small>使用 C# 學習 socket 連線</small>
                   </div>
                   <img
-                    src="images/page-5/07-baseball connection.jpg"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/07-baseball connection.jpg"
+                    class="img-fluid"
                     alt="棒球九宮格連線遊戲"
                   />
                 </div>
@@ -182,8 +182,8 @@
                     <small>使用 VB 學習 socket 連線</small>
                   </div>
                   <img
-                    src="images/page-5/08-fight connection.jpg"
-                    class="img-responsive"
+                    src="@/assets/images/page-5/08-fight connection.jpg"
+                    class="img-fluid"
                     alt="小惡魔對戰連線遊戲"
                   />
                 </div>
