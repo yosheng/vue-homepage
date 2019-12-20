@@ -65,8 +65,8 @@
           </div></b-col
         >
         <b-col md="6" class="d-none d-sm-block">
-          <swiper :options="swiperOption">
-            <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
+          <swiper :options="swiperOption" class="license-container">
+            <swiper-slide v-for="(slide, index) in swiperSlides" :key="index" class="license-slide">
               <span class="tip">{{ slide.title }}</span>
               <img :src="require(`@/assets/images/page-3/${slide.img}`)"
             /></swiper-slide>
@@ -131,12 +131,12 @@ export default {
 }
 </script>
 <style lang="scss">
-.swiper-container {
+.license-container {
   height: 300px;
   width: 400px;
 }
 
-.swiper-slide {
+.license-slide {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
