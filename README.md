@@ -1,21 +1,21 @@
-# vue-home-page
+# vue-homepage
 
-> A Vue.js project
+一套基於 Vue 構建的前端個人主頁，相比於之前的 [Homepage](https://github.com/yosheng/Homepage) 移除對 jQuery 依賴。
 
-## Build Setup
+## 使用方法
 
 ``` bash
-# install dependencies
+# 安裝依賴
 npm install
 
-# serve with hot reload at localhost:8080
+# 執行開發環境，瀏覽器打開 localhost:8080 (預設)
 npm run dev
 
-# build for production with minification
+# 打包推到生產環境
 npm run build
 
-# build for production and view the bundle analyzer report
+# 查看打包過程
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+具體成果可以查看 https://home.yosheng.tw/
